@@ -1,4 +1,4 @@
-<<?php
+<?php
 
 // Learning Page
 session_start();
