@@ -76,3 +76,16 @@ CREATE TABLE order_items (
     FOREIGN KEY (product_id) REFERENCES products(id)
 );
 
+CREATE TABLE videos (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    video_link VARCHAR(255) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL
+);
+
+INSERT INTO videos (id, video_link, title, description) VALUES
+(1, 'https://www.youtube.com/embed/OVtjG6DawxE', 'HOW I MAKE CERAMICS AT HOME (the entire pottery process) | lolita olympia | Moderate\n', 'Follow along as Lolita Olympia shares her home ceramics process. Beginning with wedging clay, she molds and shapes it on her pottery wheel, creating unique forms. After drying, pieces are trimmed, bisque-fired, glazed, and fired again. Finally, each piece is lovingly finished, resulting in handmade ceramics imbued with personal touch and creativity.'),
+(2, 'https://www.youtube.com/embed/6bZTr9kAxgo', 'Intermediate lesson on bowls (making a better functional bowl)\n', 'In this intermediate lesson on bowl-making, focus on refining form and function. Start by centering clay on the wheel, pulling walls evenly to desired thickness. Pay attention to shaping for optimal functionality, ensuring even thickness and smooth rims. Experiment with decorative elements and glazes for personalized touches. Bisque and glaze-fire for durability.'),
+(3, 'https://www.youtube.com/embed/PSHQxlbMNpE', 'Basics of Ceramics Clay Stages, Storage, Handbuilding Tools and Clean Up | Intermediate', 'Learn intermediate ceramic basics with a focus on clay stages, storage, handbuilding tools, and cleanup. Explore clay preparation from raw to workable stages, with tips on storage to maintain moisture. Master essential handbuilding tools for shaping and texturing. Discover efficient cleanup techniques for a tidy and organized studio space.');
+
+
